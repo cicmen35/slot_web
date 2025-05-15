@@ -40,6 +40,7 @@ The game features different symbols (A, B, C, D) with varying frequencies and va
 
   ```
   python -m http.server 8000
+  (or python3)
   ```
   Then visit `http://localhost:8000` in browser
 
