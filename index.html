@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Slot Machine Game</h1>
+        
+        <div id="game-setup" class="game-section">
+            <h2>Game Setup</h2>
+            <div class="input-group">
+                <label for="deposit">Enter a deposit amount:</label>
+                <input type="number" id="deposit" min="1">
+            </div>
+            <button id="deposit-btn">Deposit</button>
+            
+            <div id="betting-section" class="hidden">
+                <div class="input-group">
+                    <label for="lines">Enter the number of lines to bet on (1-3):</label>
+                    <input type="number" id="lines" min="1" max="3" value="1">
+                </div>
+                <div class="input-group">
+                    <label for="bet-amount">Enter the bet per line:</label>
+                    <input type="number" id="bet-amount" min="1">
+                </div>
+                <button id="spin-btn">Spin</button>
+            </div>
+        </div>
+        
+        <div id="game-display" class="game-section hidden">
+            <h2>Slot Machine</h2>
+            <div id="balance-display">Balance: $<span id="balance">0</span></div>
+            
+            <div id="slot-machine">
+                <div class="reel">
+                    <div class="symbol" id="r0c0"></div>
+                    <div class="symbol" id="r1c0"></div>
+                    <div class="symbol" id="r2c0"></div>
+                </div>
+                <div class="reel">
+                    <div class="symbol" id="r0c1"></div>
+                    <div class="symbol" id="r1c1"></div>
+                    <div class="symbol" id="r2c1"></div>
+                </div>
+                <div class="reel">
+                    <div class="symbol" id="r0c2"></div>
+                    <div class="symbol" id="r1c2"></div>
+                    <div class="symbol" id="r2c2"></div>
+                </div>
+            </div>
+            
+            <div id="results">
+                <p id="winnings-message"></p>
+            </div>
+            
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+    
+    <script src="project.js"></script>
+</body>
+</html>
